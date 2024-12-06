@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumunyu - Rooted in Intelligence, Growing with Care</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #b22222; /* Red color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #800000; /* Darker red */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Makes navigation flexible for smaller screens */
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #b22222;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Ensures tabs fit smaller screens */
+            margin: 20px 0;
+        }
+
+        .tab-button {
+            background-color: #800000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-family: 'Roboto Mono', monospace;
+            cursor: pointer;
+            flex: 1 1 150px; /* Makes each tab flexible */
+            max-width: 200px;
+        }
+
+        .tab-button.active {
+            background-color: #b22222;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        footer p:last-child {
+            font-style: italic;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .tab-button {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tab-button {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            .tab-content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tumunyu</h1>
+        <p>Rooted in Intelligence, Growing with Care</p>
+    </header>
+    <nav>
+        <a href="#tabs">Explore</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="tabs">
+            <h2 style="text-align: center;">Business Model Overview</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="core-offering">Core Offering</button>
+                <button class="tab-button" data-tab="features">Key Features</button>
+                <button class="tab-button" data-tab="revenue">Revenue Streams</button>
+                <button class="tab-button" data-tab="value">Value Proposition</button>
+            </div>
+            <div class="tab-content active" id="core-offering">
+                <h3>Core Offering</h3>
+                <p>Tumunyu is an AI-driven virtual assistant tailored for farmers and agribusinesses. It provides personalized, real-time insights to optimize farming operations, improve productivity, and promote sustainable agricultural practices.</p>
+            </div>
+            <div class="tab-content" id="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Smart Farming Recommendations: AI-powered advice on crop health, soil management, irrigation, and pest control.</li>
+                    <li>Predictive Analytics: Insights into weather patterns, planting schedules, and yield forecasts.</li>
+                    <li>Market Intelligence: Updates on commodity prices, demand trends, and supply chain management.</li>
+                    <li>Sustainability Guidance: Tools for reducing resource waste and meeting compliance standards.</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="revenue">
+                <h3>Revenue Streams</h3>
+                <ul>
+                    <li><strong>Subscription Plans:</strong> Basic, Pro, and Enterprise tiers for different user needs.</li>
+                    <li><strong>Premium Features:</strong> Advanced tools for pest detection, weather analytics, and crop management.</li>
+                    <li><strong>Partnerships and Integrations:</strong> Collaborations with cooperatives, NGOs, and IoT providers.</li>
+                    <li><strong>Data Insights as a Service:</strong> Aggregated data for research and policymaking.</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="value">
+                <h3>Value Proposition</h3>
+                <p>Accessibility: An intuitive, multilingual AI assistant available via mobile, web, and SMS.</p>
+                <p>Localization: Insights tailored to regional weather, soil, and crop conditions.</p>
+                <p>Efficiency: Saves time and resources with targeted recommendations and automation.</p>
+                <p>Sustainability: Promotes eco-friendly practices that reduce costs and environmental impact.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tumunyu. All rights reserved.</p>
+        <p>Developed by Kobina Fanyinkah, Akwasi Tagoe, and Agnes Amfo-Adu</p>
+        <p><em>University of Arkansas - Fayetteville</em></p>
+    </footer>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(button.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
